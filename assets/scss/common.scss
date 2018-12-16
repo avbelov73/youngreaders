@@ -1,0 +1,135 @@
+body {
+  background-color: white;
+}
+
+button {
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  height: 50px;
+  justify-content: center;
+  outline: none !important;
+  padding: 0 28px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, color 0.3s linear,
+              background-color 0.3s linear, border-color 0.3s linear;
+
+  @media (min-width: $breakpoint-1) {
+    + button {
+      margin-left: 12px;
+    }
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+
+  &.small {
+    height: 46px;
+    padding: 0 23px;
+  }
+
+  &.large {
+    height: 60px;
+  }
+
+  &.white {
+    background: white;
+    border: 1px solid #ced9ea;
+    color: $yr-color-red;
+    letter-spacing: 1.4px;
+
+    &.bg-fill {
+      background-color: white;
+      border: none !important;
+      color: $yr-color-blue;
+
+      .button-icon::before {
+        color: $yr-color-blue;
+      }
+
+      &:hover {
+        color: $yr-color-red;
+
+        .button-icon::before {
+          color: $yr-color-red;
+        }
+      }
+    }
+  
+    &:hover {
+      border-color: $yr-color-red;
+    }
+  
+    .button-icon::before {
+      color: $yr-color-red;
+    }
+  }
+
+  &.blue {
+    background-color: $yr-color-blue;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+  
+    &:hover {
+      background-color: $yr-color-red;
+    }
+  }
+
+  .button-icon {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 7px;
+
+    &::before {
+      transition: color 0.3s linear;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-1) and (max-width: $breakpoint-3 - 1px) {
+  button + button {
+    margin-left: 16px;
+  }
+}
+
+.buttons {
+  display: flex;
+
+  a + a {
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: $breakpoint-1 - 1px) {
+  .buttons {
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      margin-left: 0 !important;
+    }
+
+    a:not(:first-of-type), button:not(:first-of-type)  {
+      margin-top: 16px;
+    }
+  }
+}
+
+a.link-hover {
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: $yr-color-blue;
+  }
+
+  &:active {
+    color: $yr-color-red;
+  }
+}

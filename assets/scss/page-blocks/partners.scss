@@ -1,0 +1,120 @@
+.images {
+  margin-top: 40px
+}
+
+.partners {
+  margin-top: 100px;
+  margin-bottom: 40px;
+
+  .items {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 15%;
+
+    &.spread {
+      justify-content: space-around;
+    }
+
+    &.wrap {
+      flex-wrap: wrap;
+    }
+  }
+
+  .item {
+    display: inline-block;
+  }
+
+  h2 {
+    color: #000;
+    font-family: Gerbera;
+    font-size: 33px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  h3 {
+    color: #a3adca;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 35px 0 25px 0;
+    text-align: center;
+    text-transform: none;
+  }
+
+  img {
+    margin: 13px 25px;
+    width: 150px;
+
+    &.nornikel {
+      width: 104px;
+    }
+    
+    &.prosveschenie {
+        width: 150px;
+    }
+    
+    &.artek {
+        width: 150px;
+    }
+    
+    &.gitis {
+        width: 135px;
+    }
+    
+    &.pravoobl {
+        width: 165px;
+    }
+    
+    &.book24 {
+        width: 179px;
+    }
+    
+    &.tvcultura {
+        width: 115px;
+    }
+    
+    &.minobr {
+        width: 112px;
+    }
+  }
+}
+
+@media print,screen and (min-width: $breakpoint-1) and (max-width: $breakpoint-2 - 1px) {
+  .partners {
+    margin-top: 100px;
+
+    h2 {
+      font-size: 33px;
+      letter-spacing: 1px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-1 - 1px) {
+  .partners {
+    margin-top: 64px;
+
+    h2 {
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-transform: none;
+    }
+
+    .items {
+      flex-wrap: wrap;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+
+.block-4 {
+  margin-top: 90px;
+
+  h2 {
+    color: #000;
+    font-family: Gerbera;
+    font-size: 33px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .items {
+    display: flex;
+    font-family: Roboto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1142px;
+    margin: 60px auto 0 auto;
+    flex-direction: row;
+
+    > div {
+      background-color: #fff;
+      box-shadow: 8px 16px 42px 0 rgba(0,41,123,.06);
+      box-sizing: border-box;
+      padding: 32px 24px;
+      max-width: 360px;
+    }
+
+    p {
+      color: #8d8c8c;
+      font-size: 14px;
+      line-height: 20px;
+
+      &.number {
+        color: #102eb0;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 10px;
+      }
+
+      &.h {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        line-height: 26px;
+
+        a {
+          border-bottom: 2px solid $yr-color-blue;
+
+          &:not(:hover) {
+            color: $yr-color-blue;
+          }
+
+          &:active {
+            border-bottom: 2px solid $yr-color-red;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .dates {
+    color: grey;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 36px;
+  }
+}
+
+@media print,screen and (min-width: $breakpoint-1) and (max-width: $breakpoint-3 - 1px) {
+  .block-4 {
+    margin-top: 100px;
+
+    h2 {
+      font-size: 33px;
+      letter-spacing: 1px;
+      line-height: 32px
+    }
+
+    .items {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      max-width: 720px;
+      margin: 0 auto;
+
+      > div {
+        max-width: 220px;
+        padding: 38px 25px
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-1 - 1px) {
+  .block-4 {
+    margin-top: 64px;
+
+    h2 {
+      font-size: 20px;
+      text-transform: none;
+    }
+
+    .items {
+      flex-direction: column;
+      margin-top: 32px;
+
+      > div {
+        width: 290px;
+
+        &:not(:first-of-type) {
+          margin-top: 32px;
+        }
+      }
+    }
+
+    .buttons {
+      margin-top: 40px;
+    }
+  }
+}

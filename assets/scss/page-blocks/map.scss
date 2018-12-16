@@ -1,0 +1,33 @@
+.karta {
+  margin-top: 100px;
+
+  h2 {
+    color: #000;
+    font-family: Gerbera;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    line-height: 27px;
+    margin-bottom: 67px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+#region-map {
+  height: 650px;
+}
+
+@media (max-width: $breakpoint-1 - 1px) {
+  .karta {
+    margin-top: 64px;
+
+    h2 {
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-transform: none;
+    }
+  }
+}
