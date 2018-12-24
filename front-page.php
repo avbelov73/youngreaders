@@ -1,15 +1,13 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
-  <title>Международный конкурс чтецов «Живая классика»</title>
   <head>
+      <title>Международный конкурс чтецов «Живая классика»</title>
     <?php if (!isset($_POST["ajaxReq"]) || $_POST["ajaxReq"] != 'yes') wp_head(); ?>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index | Foundation for Sites</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="/wp-content/themes/flow/assets/css/app.css?v=11">
+    <link rel="stylesheet" href="<?php echo ELATED_ASSETS_ROOT ?>/css/app.css?v=11">
   </head>
   <body>
 
@@ -28,7 +26,7 @@
     <div class="mobile-menu-backdrop"></div>
     <div class="mobile-menu">
       <div class="close" id="menu-close">
-        <img src="/wp-content/themes/flow/assets/img/close-button.svg">
+        <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/close-button.svg">
       </div>
       <div class="top_menu">
         <a href="#" class="selected">Конкурс юных чтецов</a>
@@ -69,15 +67,15 @@
         </a>
       </div>
     </div>
-    
+
     <div class="main">
       <div class="header">
         <div class="limiter">
           <a href="/" class="logo-wrapper">
-            <img class="logo" src="/wp-content/themes/flow/assets/img/logo.svg" alt="logo">
+            <img class="logo" src="<?php echo ELATED_ASSETS_ROOT ?>/img/logo.svg" alt="logo">
           </a>
           <button class='menu-open' id='menu-open'>
-            <img src="/wp-content/themes/flow/assets/img/menu-icon.svg" alt="Меню" class="menu-icon">
+            <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/menu-icon.svg" alt="Меню" class="menu-icon">
             <span class="button-text">Меню</span>
           </button>
           <div class="content">
@@ -114,10 +112,10 @@
       <div class="header-placeholder">
 
       </div>
-    
+
       <div class="text">
         <div class="above-the-line">
-          <img class="logo" src="/wp-content/themes/flow/assets/img/man-on-book-logo.svg">
+          <img class="logo" src="<?php echo ELATED_ASSETS_ROOT ?>/img/man-on-book-logo.svg">
           <p class="text-blue">
             Международный конкурс<br>
             юных чтецов
@@ -141,10 +139,10 @@
         </div>
       </div>
     </div>
-    
+
     <!-- <div class="block-2">
       <div class="imgs">
-    
+
       </div>
       <div class="text">
         <p class="star">Онлайн конкурс</p>
@@ -157,21 +155,21 @@
         </div>
       </div>
     </div> -->
-    
+
     <div class="block-3">
       <div class="items">
         <div class="">
-          <img src="/wp-content/themes/flow/assets/img/camp.png" alt="Лагерь «Артек»">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/camp.png" alt="Лагерь «Артек»">
           <p class="h">Выиграй<br> путёвку</p>
           <p>в международный детский<br> центр «Артек»</p>
         </div>
         <div class="">
-          <img src="/wp-content/themes/flow/assets/img/red-square.png" alt="Красная площадь">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/red-square.png" alt="Красная площадь">
           <p class="h">Выступи на<br> <span class="red">Красной площади</span></p>
           <p>в Москве на финальном<br> этапе конкурса</p>
         </div>
         <div class="">
-          <img src="/wp-content/themes/flow/assets/img/graduate.png" alt="ГИТИС">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/graduate.png" alt="ГИТИС">
           <p class="h">Поступи<br> в ГИТИС</p>
           <p>Российский университет<br> театрального искусства</p>
         </div>
@@ -183,10 +181,10 @@
         ?>
       </div>
     </div>
-    
+
     <div class="video">
-      <video poster="/wp-content/themes/flow/assets/img/video-preview.jpg" id="bg_video" webkit-playsinline playsinline muted loop>
-        <source src="/wp-content/themes/flow/assets/video/bg_video.mp4" type="video/mp4">
+      <video poster="<?php echo ELATED_ASSETS_ROOT ?>/img/video-preview.jpg" id="bg_video" webkit-playsinline playsinline muted loop>
+        <source src="<?php echo ELATED_ASSETS_ROOT ?>/video/bg_video.mp4" type="video/mp4">
       </video>
       <div class="overlay">
         <?php
@@ -198,7 +196,7 @@
         ?>
       </div>
     </div>
-    
+
     <div class="block-4" id="rules">
       <h2>Как принять участие?</h2>
       <div class="items">
@@ -236,38 +234,38 @@
         * классный этап будет проходить с 1 по 15 февраля 2019 года
       </div>
     </div>
-    
+
     <div class="karta">
       <h2>85 регионов России, 80 стран</h2>
       <div id="region-map" data-lat='35' data-lon='0' data-zoom='2'></div>
     </div>
-    
+
     <div class="block-5">
       <h2>Жюри конкурса</h2>
       <div class="items">
         <div class="item">
-          <img src="/wp-content/themes/flow/assets/img/juri1.png" alt="">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/juri1.png" alt="">
           <div class="info">
             <h4 class="h">Григорий Заславский</h4>
             <p>Театральный критик, ректор ГИТИСа</p>
           </div>
         </div>
         <div class="item">
-          <img src="/wp-content/themes/flow/assets/img/juri2.png" alt="">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/juri2.png" alt="">
           <div class="info">
             <h4 class="h">Андрей Соколов</h4>
             <p>Актёр и режиссёр театра и кино, продюсер</p>
           </div>
         </div>
         <div class="item">
-          <img src="/wp-content/themes/flow/assets/img/juri3.png" alt="">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/juri3.png" alt="">
           <div class="info">
             <h4 class="h">Елена Захарова</h4>
             <p>Российская актриса театра и кино</p>
           </div>
         </div>
         <div class="item">
-          <img src="/wp-content/themes/flow/assets/img/juri4.png" alt="">
+          <img src="<?php echo ELATED_ASSETS_ROOT ?>/img/juri4.png" alt="">
           <div class="info">
             <h4 class="h">Андрей Усачёв</h4>
             <p>Детский писатель, поэт и драматург</p>
@@ -275,56 +273,56 @@
         </div>
       </div>
     </div>
-    
+
     <div class="images">
         <?php
           $code = '[instagram-feed]';
           echo do_shortcode(wp_kses_post($code));
         ?>
     </div>
-    
+
     <div class="partners">
       <h2>Партнёры конкурса</h2>
       <h3>Генеральные партнёры:</h3>
       <div class="items">
         <div class="item">
           <a href="https://www.prosv.ru/" target="blank">
-            <img class="prosveschenie" src="/wp-content/themes/flow/assets/img/prosveschenie.png" alt="">
+            <img class="prosveschenie" src="<?php echo ELATED_ASSETS_ROOT ?>/img/prosveschenie.png" alt="">
           </a>
         </div>
         <div class="item">
           <a href="https://www.nornickel.ru/" target="blank">
-            <img class="nornikel" src="/wp-content/themes/flow/assets/img/nornikel.png" alt="">
+            <img class="nornikel" src="<?php echo ELATED_ASSETS_ROOT ?>/img/nornikel.png" alt="">
           </a>
         </div>
       </div>
-      
+
       <h3>Партнёры:</h3>
       <div class="items">
         <div class="item">
           <a href="https://artek.org/" target="blank">
-            <img class="artek" src="/wp-content/themes/flow/assets/img/logo1.png" alt="">
+            <img class="artek" src="<?php echo ELATED_ASSETS_ROOT ?>/img/logo1.png" alt="">
           </a>
         </div>
         <div class="item">
           <a href="https://www.gitis.net/" target="blank">
-            <img class="gitis" src="/wp-content/themes/flow/assets/img/logo2.png" alt="">
+            <img class="gitis" src="<?php echo ELATED_ASSETS_ROOT ?>/img/logo2.png" alt="">
           </a>
         </div>
         <div class="item">
           <a href="http://cfund.ru/" target="blank">
-            <img class="pravoobl" src="/wp-content/themes/flow/assets/img/pravoobl.png" alt="">
+            <img class="pravoobl" src="<?php echo ELATED_ASSETS_ROOT ?>/img/pravoobl.png" alt="">
           </a>
         </div>
       </div>
-      
+
       <div class="items spread">
         <div class="item">
           <h3>Под патронатом:</h3>
           <div class="items">
             <div class="item">
               <a href="https://edu.gov.ru/" target="blank">
-                <img class="minobr" src="/wp-content/themes/flow/assets/img/minobr.png" alt="">
+                <img class="minobr" src="<?php echo ELATED_ASSETS_ROOT ?>/img/minobr.png" alt="">
               </a>
             </div>
           </div>
@@ -334,43 +332,43 @@
           <div class="items">
             <div class="item">
               <a href="https://президентскиегранты.рф/" target="blank">
-                <img class="book24" style="margin: 41px" src="/wp-content/themes/flow/assets/img/pregrant.png" alt="">
+                <img class="book24" style="margin: 41px" src="<?php echo ELATED_ASSETS_ROOT ?>/img/pregrant.png" alt="">
               </a>
             </div>
           </div>
         </div>
       </div>
-      
+
       <h3>Генеральные информационные партнёры:</h3>
       <div class="items wrap">
         <div class="item">
           <a href="https://tvkultura.ru/" target="blank">
-            <img class="tvcultura" src="/wp-content/themes/flow/assets/img/tvcultura.jpg" alt="">
+            <img class="tvcultura" src="<?php echo ELATED_ASSETS_ROOT ?>/img/tvcultura.jpg" alt="">
           </a>
         </div>
         <div class="item">
           <a href="https://iz.ru/" target="blank">
-            <img class="izvestia" src="/wp-content/themes/flow/assets/img/izvestia.png" alt="">
+            <img class="izvestia" src="<?php echo ELATED_ASSETS_ROOT ?>/img/izvestia.png" alt="">
           </a>
         </div>
         <div class="item">
           <a href="https://echo.msk.ru/" target="blank">
-            <img class="echomsk" src="/wp-content/themes/flow/assets/img/echomsk.jpg" alt="">
+            <img class="echomsk" src="<?php echo ELATED_ASSETS_ROOT ?>/img/echomsk.jpg" alt="">
           </a>
         </div>
         <div class="item">
           <a href="http://ug.ru/" target="blank">
-            <img class="uchgazeta" src="/wp-content/themes/flow/assets/img/uchgazeta.png" alt="">
+            <img class="uchgazeta" src="<?php echo ELATED_ASSETS_ROOT ?>/img/uchgazeta.png" alt="">
           </a>
         </div>
         <div class="item">
           <a href="https://ria.ru/sn/" target="blank">
-            <img class="socnavigator" src="/wp-content/themes/flow/assets/img/socnavigator.png" alt="">
+            <img class="socnavigator" src="<?php echo ELATED_ASSETS_ROOT ?>/img/socnavigator.png" alt="">
           </a>
         </div>
       </div>
     </div>
-    
+
     <div class="bottom-menu">
       <div class="container">
         <div class="menus">
@@ -398,7 +396,7 @@
         <button class="blue" type="button" name="button" onclick="window.location.href='/wp-content/uploads/2018/09/Partneram_polnaya.pdf'">Стать партнёром</button>
       </div>
     </div>
-    
+
     <div class="footer">
       <div class="container">
         <div class="">
@@ -423,10 +421,10 @@
         </div>
       </div>
     </div>
-    
-    <script src="/wp-content/themes/flow/assets/js/app.js"></script>
+
+    <script src="<?php echo ELATED_ASSETS_ROOT ?>/js/app.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="//test.youngreaders.ru/assets/components/youngreaders/pages/dist/region-map.min.js"></script>
+<!--    <script src="//test.youngreaders.ru/assets/components/youngreaders/pages/dist/region-map.min.js"></script>-->
     <script>
       window.mobilecheck = function() {
         var check = false;
@@ -464,7 +462,7 @@
         }
 
         window.addEventListener('scroll', recomputeHeader, { passive: true });
-        recomputeHeader();     
+        recomputeHeader();
 
         menuOpen.addEventListener('click', function () {
           var rect = menuOpen.getBoundingClientRect();
